@@ -6,7 +6,7 @@ for _ in range(case):
     clothes={}
     for i in range(n):
         cloth=input()
-        if cloth.split(" ")[1] not in clothes.keys(): # 종류 처음일 때
+        if cloth.split(" ")[1] not in clothes: # 종류 처음일 때
             clothes[cloth.split(" ")[1]]=1
         else:
             clothes[cloth.split(" ")[1]]+=1
